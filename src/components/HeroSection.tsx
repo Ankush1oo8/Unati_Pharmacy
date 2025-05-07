@@ -1,19 +1,12 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Apple, Play } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 const HeroSection = () => {
-  return (
-    <section className="relative bg-gradient-hero text-white py-20 sm:py-28 w-full overflow-hidden">
+  return <section className="relative bg-gradient-hero text-white py-20 sm:py-28 w-full overflow-hidden">
       {/* Background Medicine Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80" 
-          alt="Medicine Background" 
-          className="w-full h-full object-cover object-center"
-        />
+        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80" alt="Medicine Background" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-medical-blue via-medical-blue/80 to-medical-blue/60"></div>
       </div>
       
@@ -25,7 +18,7 @@ const HeroSection = () => {
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-tight opacity-0 animate-fade-in">
             <span className="text-white">Wholesale Medicine Platform </span>
-            <span className="text-medical-light-blue">for Pharmacies</span>
+            <span className="text-medical-light-blue text-zinc-800">for Pharmacies</span>
           </h1>
           <p className="text-lg sm:text-xl mb-10 text-white/90 max-w-lg opacity-0 animate-fade-in animate-delay-200">
             Simplify your pharmacy inventory management. Get the best prices on bulk medicines with our digital wholesale platform.
@@ -70,8 +63,6 @@ const HeroSection = () => {
       <div className="absolute -top-20 -left-20 w-80 h-80 bg-medical-teal rounded-full opacity-30 blur-3xl"></div>
       <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-white/20 rounded-full opacity-20 blur-xl"></div>
       <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-medical-green/30 rounded-full opacity-30 blur-lg"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
