@@ -59,7 +59,7 @@ const HeroSection = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-medical-light-blue rounded-full opacity-30 blur-3xl"></div>
+      <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-medical-light-blue rounded-full opacity-30 blur-3xl bg-sky-950"></div>
       <div className="absolute -top-20 -left-20 w-80 h-80 bg-medical-teal rounded-full opacity-30 blur-3xl"></div>
       <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-white/20 rounded-full opacity-20 blur-xl"></div>
       <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-medical-green/30 rounded-full opacity-30 blur-lg"></div>
