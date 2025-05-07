@@ -41,7 +41,7 @@ const Footer = () => {
               </a>
               <a href="#" className="inline-block bg-white text-black rounded-lg px-4 py-2 w-full text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-play-store"><path d="m4 4 10.1 10.1c.2.2.2.5 0 .7L4 20" /><path d="m4 20 7-3.1" /><path d="m11 17 7 3" /><path d="m11 7 7-3" /><path d="m4 4 7 3" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className=" lucide-play-store"><path d="m4 4 10.1 10.1c.2.2.2.5 0 .7L4 20" /><path d="m4 20 7-3.1" /><path d="m11 17 7 3" /><path d="m11 7 7-3" /><path d="m4 4 7 3" /></svg>
                   <div>
                     <div className="text-xs">Get it on</div>
                     <div className="text-sm font-semibold">Google Play</div>
