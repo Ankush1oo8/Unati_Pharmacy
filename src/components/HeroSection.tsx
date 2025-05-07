@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Apple, PlayStore } from "lucide-react";
+import { Apple, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -23,7 +23,7 @@ const HeroSection = () => {
               </div>
             </Button>
             <Button className="bg-white text-medical-blue hover:bg-gray-100 flex items-center gap-2 px-6 py-6">
-              <PlayStore className="h-6 w-6" />
+              <Play className="h-6 w-6" />
               <div className="text-left">
                 <div className="text-xs">Get it on</div>
                 <div className="text-lg font-semibold">Google Play</div>

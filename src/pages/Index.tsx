@@ -6,6 +6,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Apple, Play } from 'lucide-react';
 
 const Index = () => {
   // Function to handle scroll animations
@@ -114,14 +115,14 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4 opacity-0 animate-fade-in animate-delay-200">
               <Button className="bg-white text-medical-blue hover:bg-gray-100 flex items-center gap-2 px-6 py-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-apple"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg>
+                <Apple size={24} />
                 <div className="text-left">
                   <div className="text-xs">Download on the</div>
                   <div className="text-lg font-semibold">App Store</div>
                 </div>
               </Button>
               <Button className="bg-white text-medical-blue hover:bg-gray-100 flex items-center gap-2 px-6 py-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-play-store"><path d="m4 4 10.1 10.1c.2.2.2.5 0 .7L4 20"/><path d="m4 20 7-3.1"/><path d="m11 17 7 3"/><path d="m11 7 7-3"/><path d="m4 4 7 3"/></svg>
+                <Play size={24} />
                 <div className="text-left">
                   <div className="text-xs">Get it on</div>
                   <div className="text-lg font-semibold">Google Play</div>
