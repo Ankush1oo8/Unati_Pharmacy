@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
@@ -7,37 +6,31 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Apple, Play } from 'lucide-react';
-
 const Index = () => {
   // Function to handle scroll animations
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
-            entry.target.classList.remove('opacity-0');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+          entry.target.classList.remove('opacity-0');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
     const hiddenElements = document.querySelectorAll('.opacity-0');
-    hiddenElements.forEach((el) => observer.observe(el));
-
+    hiddenElements.forEach(el => observer.observe(el));
     return () => {
-      hiddenElements.forEach((el) => observer.unobserve(el));
+      hiddenElements.forEach(el => observer.unobserve(el));
     };
   }, []);
-
-  return (
-    <div className="overflow-x-hidden">
+  return <div className="overflow-x-hidden">
       <header className="bg-white sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <span className="font-bold text-xl text-medical-blue">PharmaWholesale</span>
+              <span className="font-bold text-xl text-medical-blue">Unati Pharmacy</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-600 hover:text-medical-blue">Features</a>
@@ -61,11 +54,7 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="md:w-1/2 opacity-0 animate-fade-in">
-                <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Dashboard on tablet" 
-                  className="rounded-lg shadow-xl"
-                />
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dashboard on tablet" className="rounded-lg shadow-xl" />
               </div>
               <div className="md:w-1/2 opacity-0 animate-fade-in animate-delay-200">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -76,19 +65,12 @@ const Index = () => {
                   Track trends, analyze spending patterns, and optimize your inventory with data-driven insights.
                 </p>
                 <ul className="space-y-4">
-                  {[
-                    "Real-time inventory tracking",
-                    "Purchase pattern analysis",
-                    "Cost-saving opportunities",
-                    "Demand forecasting"
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start">
+                  {["Real-time inventory tracking", "Purchase pattern analysis", "Cost-saving opportunities", "Demand forecasting"].map((item, index) => <li key={index} className="flex items-start">
                       <svg className="w-6 h-6 text-medical-green mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
                       </svg>
                       <span>{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
             </div>
@@ -132,8 +114,6 @@ const Index = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
