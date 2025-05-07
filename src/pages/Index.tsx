@@ -54,7 +54,7 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="md:w-1/2 opacity-0 animate-fade-in">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dashboard on tablet" className="rounded-lg shadow-xl" />
+                <img alt="Dashboard on tablet" className="rounded-lg shadow-xl" src="https://youthincmag.com/wp-content/uploads/2020/12/Screenshot-2020-12-03-at-1.41.53-PM.jpg" />
               </div>
               <div className="md:w-1/2 opacity-0 animate-fade-in animate-delay-200">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
