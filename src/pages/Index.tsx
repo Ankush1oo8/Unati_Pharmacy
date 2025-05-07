@@ -45,9 +45,7 @@ const Index = () => {
               <a href="#faq" className="text-gray-600 hover:text-medical-blue">FAQ</a>
               <a href="#contact" className="text-gray-600 hover:text-medical-blue">Contact</a>
             </div>
-            <div>
-              <Button className="bg-medical-blue hover:bg-medical-dark-blue">Log In</Button>
-            </div>
+            {/* Login button removed */}
           </div>
         </div>
       </header>
